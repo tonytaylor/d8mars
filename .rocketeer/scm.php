@@ -10,7 +10,7 @@ return [
 
     // The SSH/HTTPS address to your repository
     // Example: https://github.com/vendor/website.git
-    'repository' => 'https://github.com/tonytaylor/foo.git',
+    'repository' => 'https://github.com/tonytaylor/d8mars.git',
 
     // The repository credentials : you can leave those empty
     // if you're using SSH or if your repository is public
@@ -30,6 +30,6 @@ return [
     'shallow'    => true,
 
     // Recursively pull in submodules. Works only with GIT.
-    'submodules' => true,
+    'submodules' => false,
 
 ];

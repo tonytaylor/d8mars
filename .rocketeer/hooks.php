@@ -24,7 +24,10 @@ return [
     // Tasks to execute after the core Rocketeer Tasks
     'after'  => [
         'setup'   => [],
-        'deploy'  => [],
+        'deploy'  => [
+            'rm -f /home/ibrokeit/webapps/d8mars/*',
+            'ln -s /home/ibrokeit/pkgs/deployed-apps/d8mars/current/web/* /home/ibrokeit/webapps/d8mars/'
+        ],
         'cleanup' => [],
     ],
 

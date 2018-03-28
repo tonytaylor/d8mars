@@ -30,20 +30,19 @@ return [
     ////////////////////////////////////////////////////////////////////
 
     // The default remote connection(s) to execute tasks on
-    'default'          => ['production'],
+    'default'          => ['webfaction'],
 
     // The various connections you defined
     // You can leave all of this empty or remove it entirely if you don't want
     // to track files with credentials : Rocketeer will prompt you for your credentials
     // and store them locally
     'connections'      => [
-        'production' => [
-            'host'      => 'ibrokeit.webfactional.com',
+        'webfaction' => [
+            'host'      => 'web598.webfaction.com',
             'username'  => 'ibrokeit',
             'password'  => '',
-            'key'       => '/home/tone/.ssh/id_webfaction_blackbox',
+            'key'       => '',
             'keyphrase' => '',
-            'agent'     => '',
             'db_role'   => true,
         ],
     ],
@@ -73,12 +72,12 @@ return [
     ////////////////////////////////////////////////////////////////////
 
     'on'               => [
-
         // Stages configurations
         'stages'      => [],
         // Connections configuration
-        'connections' => [],
-
+        'connections' => [
+            'webfaction'=> [ 'scm' => [ 'branch' => 'master' ] ]
+        ],
     ],
 
 ];

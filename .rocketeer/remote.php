@@ -20,18 +20,18 @@ return [
 
     // The root directory where your applications will be deployed
     // This path *needs* to start at the root, ie. start with a /
-    'root_directory' => '/home/www/',
+    'root_directory' => '/home/ibrokeit/pkgs/deployed-apps/',
 
     // The folder the application will be cloned in
     // Leave empty to use `application_name` as your folder name
-    'app_directory'  => '',
+    'app_directory'  => 'd8mars',
 
     // A list of folders/file to be shared between releases
     // Use this to list folders that need to keep their state, like
     // user uploaded data, file-based databases, etc.
     'shared'         => [
-        'storage/logs',
-        'storage/sessions',
+        'web/sites/default/settings.php',
+        'web/sites/default/files'
     ],
 
     // Execution
@@ -59,9 +59,7 @@ return [
 
         // The folders and files to set as web writable
         'files'    => [
-            'app/database/production.sqlite',
-            'storage',
-            'public',
+            'web/sites/default/files'
         ],
 
         // Here you can configure what actions will be executed to set

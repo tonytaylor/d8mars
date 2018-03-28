@@ -13,10 +13,10 @@ return [
     ////////////////////////////////////////////////////////////////////
 
     // Path to the PHP binary
-    'php'      => '',
+    'php'      => '/usr/local/bin/php71',
 
     // Path to Composer
-    'composer' => '',
+    'composer' => '/home/ibrokeit/bin/composer.phar',
 
     // Path to the Artisan CLI
     'artisan'  => 'artisan',
